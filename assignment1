@@ -1,0 +1,45 @@
+#1 AVERAGE
+a=int(input("Enter 1st number"))
+b=int(input("Enter 2nd number"))
+c=int(input("Enter 3rd number"))
+e=int(input("Enter no."))
+print("Average",(a+b+c)/e)
+
+#2 GROSS
+gr=print(float("Enter gross income"))
+nd=print(float("Enter number of dependents"))
+float sd=10000
+float dd=3000
+float tr=20/100
+ti=print(float(gr-sd-(dd*nd)))
+tax=print(float(ti*tr))\\ WRONG
+
+gr=float(input("Enter gross income"))
+nd=float(input("Enter number of dependents"))
+sd=float(10000)
+dd=float(3000)
+tr=float(0.2)
+ti=gr-sd-(dd*nd)
+tax=ti*tr
+print("Taxable income=",ti)
+print("Tax=",tax)//CORRECT
+
+#3 TIME
+nos=int(input("Enter number of seconds"))
+min=int(nos/60)
+sec=nos%60
+print(min,"min",sec,"sec")
+
+#4 STRING SUM
+a=int(input('Enter 1st'))
+b=input('Enter 2nd')
+c=float(input('Enter 3rd'))
+ans=int(a+int(b)+c)
+print(ans)
+
+
+#5 SINE AND COSINE
+
+import math
+for i in range(0,360,15):
+    print(i,"---",round(math.sin((i*3.14)/180),4),round(math.cos((i*3.14)/180),4))

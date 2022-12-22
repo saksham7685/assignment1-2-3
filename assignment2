@@ -1,0 +1,77 @@
+#Q1
+sen='Python is a case sensitive language'
+#a
+length=len(sen)
+print(length)
+
+#b
+c=""
+for i in sen:
+   c=i+c
+print(c)       
+     
+#c
+x=slice(0,35,2)
+print(sen[x])
+
+#d
+replace=sen.replace("a case sensitive","object oriented")
+print(replace)
+
+#e
+sen='Python is a case sensitive language'
+print(sen.index('g',0,35))
+
+#f
+sen='Python is a case sensitive language'
+def function(sen):
+   return sen.replace(" ","")
+print(function(sen))
+
+#Q2
+name='SOURISH KANDARI'
+sid=22104066
+dep='ELECTRICAL'
+cgpa='9.7'
+print('Hey,',name,'Here!')
+print('My SID is',sid)
+print('I am from',dep,'department and my CGPA is',cgpa)
+
+#Q3
+a=56
+b=10
+print(a&b)
+print(a|b)
+print(a<<2,b<<2)
+print(a>>2,b>>4)
+
+#Q4
+a=input('Enter number')
+b=input('Enter number')
+c=input('Enter number')
+d=0
+if (a>b)&(b>c):
+    d=a
+elif (b>a)&(b>c):
+    d=b
+elif c>b:
+    d=c
+print('Greatest number is',d)    
+    
+#Q5
+word=input('Enter String')
+p=word.find('name')
+if (p==-1):
+   print("NO")
+else:
+   print("YES")
+
+#Q6
+a=int(input("ENTER SIDE"))
+b=int(input('ENTER SIDE'))
+c=int(input('ENTER SIDE'))
+
+if ((a>(b+c))|(b>(a+c))|(c>(b+a))):
+    print('NO')
+else:
+    print('YES')
